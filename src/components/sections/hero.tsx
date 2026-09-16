@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { File, Github, Linkedin } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -56,8 +55,8 @@ const HeroSection = () => {
                         )}
                       >
                         {config.author.split(" ")[0]}
-                        <br className="md:block hiidden" />
-                        {config.author.split(" ")[1]}
+                        <br className="md:block hidden" />
+                        {config.author.split(" ").slice(1).join(" ")}
                       </h1>
                     </TooltipTrigger>
                     <TooltipContent
@@ -81,37 +80,24 @@ const HeroSection = () => {
                 </BlurIn>
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
-                <Link
-                  href={
-                    "https://drive.google.com/file/d/1MTSsUA8V7Po2AsNXT8kZ5sLOpzC8l7qm/view?usp=sharing"
-                  }
-                  target="_blank"
-                  className="flex-1"
-                >
-                  <BoxReveal delay={2} width="100%" >
-                    <Button className="flex items-center gap-2 w-full">
-                      <File size={24} />
-                      <p>Resume</p>
-                    </Button>
-                  </BoxReveal>
-                </Link>
-                <div className="md:self-start flex gap-3">
-                  <Tooltip delayDuration={300}>
-                    <TooltipTrigger asChild>
-                      <Link href={"#contact"}>
-                        <Button
-                          variant={"outline"}
-                          className="block w-full overflow-hidden"
-                        >
-                          Hire Me
-                        </Button>
-                      </Link>
-                    </TooltipTrigger>
-                    <TooltipContent side="bottom">
-                      <p>pls 🥹 🙏</p>
-                    </TooltipContent>
-                  </Tooltip>
-                  <div className="flex items-center h-full gap-2">
+                <BoxReveal delay={2} width="100%">
+                  <div className="md:self-start flex gap-3">
+                    <Tooltip delayDuration={300}>
+                      <TooltipTrigger asChild>
+                        <Link href={"#contact"}>
+                          <Button
+                            variant={"default"}
+                            className="block w-full overflow-hidden"
+                          >
+                            Hire Me
+                          </Button>
+                        </Link>
+                      </TooltipTrigger>
+                      <TooltipContent side="bottom">
+                        <p>pls 🥹 🙏</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    <div className="flex items-center h-full gap-2">
                     <Link
                       href={config.social.twitter}
                       target="_blank"
@@ -140,9 +126,10 @@ const HeroSection = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </BoxReveal>
             </div>
-          )}
+          </div>
+        )}
         </div>
         <div className="grid col-span-1"></div>
       </div>

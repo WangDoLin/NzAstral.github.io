@@ -1,11 +1,5 @@
-import ResumeView from "./resume-view";
-
-export const metadata = {
-  title: "Résumé | Naresh Khatri",
-  description:
-    "Résumé of Naresh Khatri — Senior Full-Stack Engineer. View online or download the PDF.",
-};
+import { redirect } from "next/navigation";
 
 export default function ResumePage() {
-  return <ResumeView />;
+  redirect("/");
 }
