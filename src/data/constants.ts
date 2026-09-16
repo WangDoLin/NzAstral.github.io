@@ -260,7 +260,7 @@ export const EXPERIENCE: Experience[] = [
     id: 1,
     startDate: "Dec 2024",
     endDate: "Present",
-    title: "Full Stack Developer",
+    title: "Backend Developer",
     company: "OmniNexus Sdn Bhd",
     description: [
       "Built a custom image editor from scratch, cutting $4.8k/year in SaaS costs.",
@@ -283,7 +283,7 @@ export const EXPERIENCE: Experience[] = [
     id: 2,
     startDate: "Apr 2022",
     endDate: "Dec 2024",
-    title: "Freelance Full Stack Developer",
+    title: "Freelance Backend Developer",
     company: "Self-employed",
     description: [
       "Transformed chaotic Excel sheets into polished internal tools for various clients.",

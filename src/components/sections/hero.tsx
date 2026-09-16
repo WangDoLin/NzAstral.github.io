@@ -75,7 +75,7 @@ const HeroSection = () => {
                       "cursor-default sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    A Full Stack Web Developer
+                    A Backend Developer
                   </p>
                 </BlurIn>
               </div>
