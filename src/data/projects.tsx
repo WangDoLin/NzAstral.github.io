@@ -776,10 +776,10 @@ const projects: Project[] = [
     id: "portfolio",
     category: "Portfolio",
     title: "My Portfolio",
-    src: "/assets/projects-screenshots/portfolio/landing.png",
+    src: "/assets/projects-screenshots/portfolio/landing.png?v=2",
     screenshots: ["1.png"],
-    live: "http://nareshkhatri.vercel.app",
-    github: "https://github.com/Naresh-Khatri/Portfolio",
+    live: "https://wanglinprofile.vercel.app",
+    github: "https://github.com/WangDoLin/NzAstral.github.io",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -809,7 +809,7 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/portfolio/landing.png`,
+              `${BASE_PATH}/portfolio/landing.png?v=2`,
               `${BASE_PATH}/portfolio/skills.png`,
             ]}
           />
